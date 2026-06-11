@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Khám Phá Thị Trường Chứng Khoán</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Segoe UI,sans-serif}
+body{background:#000;color:#fff}
+.hero{height:100vh;background:linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
+url('https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1600&q=80');
+background-size:cover;background-position:center;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:20px}
+.hero h1{font-size:58px;color:#00ffcc}
+.hero p{max-width:900px;margin-top:20px;line-height:1.8}
+.menu{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;padding:40px}
+.card{background:#111;border:1px solid #00ffcc;border-radius:16px;padding:25px;cursor:pointer;text-align:center}
+.card:hover{transform:translateY(-5px)}
+.page{display:none;padding:40px;max-width:1200px;margin:auto}
+.page img{width:100%;max-height:400px;object-fit:cover;border-radius:16px;margin:20px 0}
+.back{background:#00ffcc;color:#000;padding:10px 20px;border:none;border-radius:10px;cursor:pointer}
+.links a{display:inline-block;margin:10px;padding:12px 20px;border:1px solid #00ffcc;color:#fff;text-decoration:none;border-radius:10px}
+.links a:hover{background:#00ffcc;color:#000}
+</style>
+<script>
+function openPage(id){
+document.getElementById('home').style.display='none';
+document.querySelectorAll('.page').forEach(p=>p.style.display='none');
+document.getElementById(id).style.display='block';
+window.scrollTo(0,0);
+}
+function goHome(){
+document.querySelectorAll('.page').forEach(p=>p.style.display='none');
+document.getElementById('home').style.display='block';
+window.scrollTo(0,0);
+}
+</script>
+</head>
+<body>
+
+<div id="home">
+<div class="hero">
+<h1>📈 STOCKHUB VIỆT NAM</h1>
+<p>Tìm hiểu từ cơ bản đến nâng cao về chứng khoán, sàn giao dịch, cơ chế hoạt động và cách tham gia đầu tư.</p>
+</div>
+
+<div class="menu">
+<div class="card" onclick="openPage('intro')">Giới thiệu về chứng khoán</div>
+<div class="card" onclick="openPage('types')">Các loại chứng khoán</div>
+<div class="card" onclick="openPage('exchange')">Sàn giao dịch chứng khoán</div>
+<div class="card" onclick="openPage('operation')">Cơ chế hoạt động</div>
+<div class="card" onclick="openPage('join')">Cách tham gia đầu tư</div>
+<div class="card" onclick="openPage('risk')">Cơ hội và rủi ro</div>
+<div class="card" onclick="openPage('sites')">Website thực tế</div>
+</div>
+</div>
+
+<div class="page" id="intro">
+<button class="back" onclick="goHome()">← Trang chủ</button>
+<h1>Giới thiệu về chứng khoán</h1>
+<img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1200&q=80">
+<p>Chứng khoán được coi là một loại hàng hóa đặc biệt nó xác nhận quyền và lợi ích hợp pháp của người đang sở hữu nó đối với tài sản hoặc một phần vốn góp của doanh nghiệp phát hành. Chứng khoán được thể hiện thông qua các hình thức như chứng chỉ, bút toán ghi sổ hay dữ liệu điện tử..</p>
+</div>
+<div class="page" id="types">
+
+<button class="back" onclick="goHome()">
+← Trang chủ
+</button>
+
+<h1>CÁC LOẠI CHỨNG KHOÁN</h1>
+
+<img src="https://images.pexels.com/photos/7567434/pexels-photo-7567434.jpeg?auto=compress&cs=tinysrgb&w=1200">
+
+<p>
+Phân loại chứng khoán
+Chứng khoán hiện nay đang được chia làm 3 loại phổ biến nhất:
+
+Chứng khoán vốn
+Chứng khoán vốn đây được coi là cổ phiếu phổ thông. Loại chứng khoán sẽ được công ty cổ phần phát hành để huy động vốn đồng thời nó cũng thể hiện quyền sở hữu một phần vốn góp, tài sản công ty của cổ đông nắm giữ
+
+Nhà đầu tư sở hữu chứng khoán vốn sẽ được chi trả cổ tức trong điều kiện công ty hoạt động kinh doanh có lãi, ngoài ra nhà đầu tư cũng sẽ được hưởng lợi từ việc bán cổ phiếu do sự chênh lệch giá (mua thấp bán cao). Bên cạnh đó, nhà đầu tư nắm giữ chứng khoán vốn cụ thể ở đây là cổ phiếu thường cũng có quyền tham gia biểu quyết các hoạt động quan trọng của công ty.
+
+Trong trường hợp công ty phát hành chứng khoán vốn phá sản hay giải thể thì cổ đông sẽ nhận lại được khoản tiền  dựa trên tỷ lệ cổ phần nắm giữ sau khi công ty đã thanh toán xong các khoản nợ. Chứng khoán vốn đa phần sẽ được phát hành dưới dạng cổ phiếu ưu đãi, cổ phiếu thường hay chứng chỉ Quỹ…
+
+Chứng khoán nợ
+Chứng khoán nợ hay trái phiếu là loại chứng khoán dùng để xác nhận mối quan hệ giữa người cho vay và người đi vay. Khi bạn sở hữu trái phiếu của công ty, điều đó thể hiện bạn đang là chủ nợ và buộc công ty phải có trách nhiệm hoàn trả khi đến hạn. Trên chứng khoán nợ thể hiện rõ số tiền cho vay, lãi suất, kỳ hạn và cả thời gian đáo hạn…
+
+Trong trường hợp không may công ty phá sản thì trái chủ sẽ được ưu tiên thanh toán trước sau đó mới chi trả cho chủ sở hữu các loại chứng khoán khác như cổ phiếu ưu đãi và cổ phiếu thường. 
+
+Hiện nay chứng khoán nợ đang được phát hành dưới dạng trái phiếu (gồm trái phiếu chính phủ, trái phiếu doanh nghiệp), hay chứng chỉ tiền gửi (CD), và cả chứng khoán được thế chấp,…. Những loại chứng khoán này đang có số lượng giao dịch tương đối lớn trên thị trường chứng khoán.
+
+Chứng khoán phái sinh
+Chứng khoán phái sinh hiểu đơn giản là một hợp đồng tài chính được thiết lập để xác nhận quyền và nghĩa vụ giữa các bên ở thời điểm hiện tại, về một giao dịch sẽ được thực hiện vào một thời điểm xác định trước trong tương lai.
+
+Hiện nay, ở thị trường chứng khoán phái sinh Việt Nam đang có 2 loại chứng khoán phái sinh:
+
+Hợp đồng tương lai chỉ số VN30
+
+Hợp đồng tương lai của Trái phiếu chính phủ
+
+Trong đó, HĐTL chỉ số VN30 được giao dịch phổ biến, còn HĐTL Trái phiếu Chính phủ thì ít được giao dịch hơn, mà chủ yếu là các tổ chức tự thực hiện giao dịch với nhau.
+
+Thông thường, chứng khoán phái sinh luôn tiềm ẩn mức rủi ro cao hơn rất nhiều so với chứng khoán cơ sở.
+</p>
+
+<h2>1. Cổ Phiếu (Stock)</h2>
+
+<p>
+Cổ phiếu là loại chứng khoán xác nhận quyền sở hữu một phần doanh nghiệp.
+Khi mua cổ phiếu, nhà đầu tư trở thành cổ đông.
+</p>
+
+<h2>2. Trái Phiếu (Bond)</h2>
+
+<p>
+Trái phiếu là giấy chứng nhận khoản vay giữa nhà đầu tư và tổ chức phát hành.
+Người sở hữu trái phiếu nhận lãi suất định kỳ.
+</p>
+
+<h2>3. Chứng Chỉ Quỹ</h2>
+
+<p>
+Là loại chứng khoán xác nhận phần vốn góp trong quỹ đầu tư.
+</p>
+
+<h2>4. Chứng Khoán Phái Sinh</h2>
+
+<p>
+Là công cụ tài chính có giá trị phụ thuộc vào tài sản cơ sở như cổ phiếu hoặc chỉ số.
+</p>
+
+<img src="https://images.pexels.com/photos/6802042/pexels-photo-6802042.jpeg?auto=compress&cs=tinysrgb&w=1200">
+
+</div>
+
+<div class="page" id="operation">
+
+<button class="back" onclick="goHome()">← Trang chủ</button>
+
+<h1>Cơ Chế Hoạt Động Của Thị Trường Chứng Khoán</h1>
+
+<img src="https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=1200">
+
+<h2>Quy trình vận hành</h2>
+
+<p>
+
+Doanh nghiệp cần vốn
+<br><br>
+⬇
+<br><br>
+
+Phát hành cổ phiếu (IPO)
+<br><br>
+⬇
+<br><br>
+
+Niêm yết trên sàn giao dịch
+<br><br>
+⬇
+<br><br>
+
+Nhà đầu tư đặt lệnh mua và bán
+<br><br>
+⬇
+<br><br>
+
+Hệ thống khớp lệnh tự động
+<br><br>
+⬇
+<br><br>
+
+Thanh toán tiền và chuyển giao cổ phiếu
+<br><br>
+⬇
+<br><br>
+
+Hoàn tất giao dịch
+
+</p>
+
+<br>
+
+<h2>Sơ đồ dòng tiền</h2>
+
+<img src="https://images.pexels.com/photos/7567537/pexels-photo-7567537.jpeg?auto=compress&cs=tinysrgb&w=1200">
+
+<p>
+
+Nhà đầu tư bỏ vốn vào doanh nghiệp thông qua việc mua cổ phiếu.
+Doanh nghiệp sử dụng số vốn này để mở rộng sản xuất kinh doanh.
+Khi doanh nghiệp phát triển tốt, giá trị cổ phiếu tăng lên và nhà đầu tư có thể thu được lợi nhuận.
+
+</p>
+
+</div>
+
+<div class="page" id="exchange">
+<button class="back" onclick="goHome()">← Trang chủ</button>
+<h1>Sàn giao dịch chứng khoán</h1>
+<img src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=1200&q=80">
+<p>Sàn giao dịch là nơi tổ chức các hoạt động mua bán chứng khoán giữa nhà đầu tư.</p>
+<p>Sàn chứng khoán đóng vai trò là kênh huy động vốn hiệu quả, tăng tính thanh khoản cho các tài sản tài chính và cung cấp một chỉ báo quan trọng về sức khỏe kinh tế (Theo Ngân hàng Thế giới, 2022)..</p>
+<p>– Huy động vốn: Doanh nghiệp có thể phát hành cổ phiếu để huy động vốn từ công chúng cho mục đích mở rộng sản xuất, kinh doanh. Chính phủ phát hành trái phiếu để tài trợ cho các dự án cơ sở hạ tầng và chi tiêu công.</p>
+<p>– Tạo thanh khoản: Sàn chứng khoán cung cấp một thị trường thứ cấp, nơi các nhà đầu tư có thể dễ dàng chuyển đổi chứng khoán họ nắm giữ thành tiền mặt, qua đó khuyến khích đầu tư dài hạn.</p>
+<p>– Định giá doanh nghiệp: Giá cổ phiếu được giao dịch trên sàn phản ánh giá trị của doanh nghiệp dựa trên kỳ vọng của thị trường về hiệu quả hoạt động và tiềm năng tăng trưởng trong tương lai.</p>
+<p>– Là “phong vũ biểu” kinh tế: Các chỉ số chứng khoán như VN-Index hay S&P 500 phản ánh tâm lý chung của nhà đầu tư và được xem là một chỉ báo sớm cho các xu hướng của nền kinh tế.</p>
+<p>Sau khi hiểu rõ định nghĩa và vai trò, việc phân loại các sàn chứng khoán tại Việt Nam sẽ giúp nhà đầu tư có cái nhìn chi tiết hơn.</p>
+</div> 
+
+<div class="page" id="operation">
+<button class="back" onclick="goHome()">← Trang chủ</button>
+<h1>Cơ chế hoạt động</h1>
+<img src="https://images.unsplash.com/photo-1613442301239-ea2478101ea6?auto=format&fit=crop&w=1200&q=80">
+<p>Doanh nghiệp phát hành cổ phiếu → niêm yết → nhà đầu tư giao dịch → hệ thống khớp lệnh → thanh toán.</p>
+</div>
+
+<div class="page" id="join">
+<button class="back" onclick="goHome()">← Trang chủ</button>
+<h1>Cách tham gia đầu tư</h1>
+<img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=1200&q=80">
+<h3>Bước 1: Mở tài khoản chứng khoán</h3>
+<h3>Bước 2: Xác thực eKYC</h3>
+<h3>Bước 3: Nạp tiền</h3>
+<h3>Bước 4: Mua cổ phiếu đầu tiên</h3>
+<h3>Bước 5: Quản lý danh mục đầu tư</h3>
+</div>
+
+<div class="page" id="risk">
+<button class="back" onclick="goHome()">← Trang chủ</button>
+<h1>CƠ HỘI VÀ RỦI RO TRONG ĐẦU TƯ CHỨNG KHOÁN</h1>
+
+<img src="https://images.pexels.com/photos/7567443/pexels-photo-7567443.jpeg?auto=compress&cs=tinysrgb&w=1200">
+
+<h2>Cơ Hội Khi Đầu Tư Chứng Khoán</h2>
+
+<p>
+Chứng khoán được xem là một trong những kênh đầu tư có khả năng sinh lời cao nhất trong dài hạn.
+Nhiều nhà đầu tư đã xây dựng được khối tài sản lớn nhờ đầu tư vào các doanh nghiệp tăng trưởng tốt.
+</p>
+
+<h3>1. Tăng Trưởng Tài Sản</h3>
+
+<p>
+Khi doanh nghiệp phát triển, lợi nhuận tăng lên và giá cổ phiếu thường có xu hướng tăng theo.
+Nhà đầu tư có thể hưởng lợi từ sự gia tăng giá trị cổ phiếu.
+</p>
+
+<h3>2. Nhận Cổ Tức</h3>
+
+<p>
+Một số doanh nghiệp chia lợi nhuận cho cổ đông dưới dạng cổ tức tiền mặt hoặc cổ phiếu.
+Đây là nguồn thu nhập thụ động hấp dẫn đối với nhà đầu tư dài hạn.
+</p>
+
+<h3>3. Đánh Bại Lạm Phát</h3>
+
+<p>
+Tiền gửi ngân hàng đôi khi không theo kịp tốc độ lạm phát.
+Trong khi đó, chứng khoán có khả năng tạo ra mức sinh lời cao hơn trong dài hạn.
+</p>
+
+<h3>4. Thanh Khoản Cao</h3>
+
+<p>
+Nhà đầu tư có thể mua bán cổ phiếu dễ dàng trên sàn giao dịch trong giờ giao dịch.
+</p>
+
+<h3>5. Đầu Tư Với Số Vốn Nhỏ</h3>
+
+<p>
+Hiện nay chỉ cần vài trăm nghìn đồng là đã có thể bắt đầu đầu tư chứng khoán.
+</p>
+
+<hr>
+
+<h2>Rủi Ro Khi Đầu Tư Chứng Khoán</h2>
+
+<p>
+Bên cạnh cơ hội sinh lời, thị trường chứng khoán cũng tiềm ẩn nhiều rủi ro.
+Nhà đầu tư cần hiểu rõ để quản lý vốn hiệu quả.
+</p>
+
+<h3>1. Rủi Ro Biến Động Giá</h3>
+
+<p>
+Giá cổ phiếu có thể tăng hoặc giảm mạnh chỉ trong thời gian ngắn do ảnh hưởng của cung cầu thị trường.
+</p>
+
+<h3>2. Rủi Ro Doanh Nghiệp</h3>
+
+<p>
+Nếu doanh nghiệp kinh doanh thua lỗ, giá cổ phiếu có thể giảm mạnh.
+Trong trường hợp xấu nhất doanh nghiệp có thể phá sản.
+</p>
+
+<h3>3. Rủi Ro Kinh Tế Vĩ Mô</h3>
+
+<p>
+Lạm phát, suy thoái kinh tế, chiến tranh, dịch bệnh hoặc khủng hoảng tài chính đều có thể tác động tiêu cực đến thị trường chứng khoán.
+</p>
+
+<h3>4. Rủi Ro Tâm Lý</h3>
+
+<p>
+Nhiều nhà đầu tư bị ảnh hưởng bởi FOMO (sợ bỏ lỡ cơ hội) hoặc hoảng loạn khi thị trường giảm mạnh dẫn đến quyết định sai lầm.
+</p>
+
+<h3>5. Rủi Ro Đòn Bẩy (Margin)</h3>
+
+<p>
+Sử dụng tiền vay để đầu tư có thể giúp tăng lợi nhuận nhưng cũng làm thua lỗ tăng lên rất nhanh.
+</p>
+
+<hr>
+
+<h2>Nguyên Tắc Hạn Chế Rủi Ro</h2>
+
+<ul>
+<li>Không đầu tư toàn bộ vốn vào một cổ phiếu.</li>
+<li>Luôn nghiên cứu doanh nghiệp trước khi mua.</li>
+<li>Không sử dụng đòn bẩy quá mức.</li>
+<li>Đầu tư bằng tiền nhàn rỗi.</li>
+<li>Xây dựng kế hoạch đầu tư dài hạn.</li>
+<li>Giữ tâm lý ổn định khi thị trường biến động.</li>
+</ul>
+
+<h2>Kết Luận</h2>
+
+<p>
+Chứng khoán mang lại cơ hội gia tăng tài sản rất lớn nhưng luôn đi kèm rủi ro.
+Nhà đầu tư thành công không phải là người tránh được mọi rủi ro mà là người hiểu rõ rủi ro và biết cách quản lý chúng.
+</p>
+
+</div>
+
+<div class="page" id="sites">
+<button class="back" onclick="goHome()">← Trang chủ</button>
+<h1>WEBSITE CHỨNG KHOÁN THỰC TẾ TẠI VIỆT NAM</h1>
+
+<p>
+Để tham gia thị trường chứng khoán, nhà đầu tư cần mở tài khoản tại các công ty chứng khoán uy tín.
+Dưới đây là những nền tảng giao dịch phổ biến và được sử dụng rộng rãi tại Việt Nam.
+</p>
+
+<br>
+
+<h2>1. SSI Securities Corporation</h2>
+
+<img src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=1200&q=80">
+
+<p>
+SSI là một trong những công ty chứng khoán lớn nhất Việt Nam với lượng khách hàng đông đảo.
+Nền tảng giao dịch ổn định, nhiều báo cáo phân tích chất lượng.
+</p>
+
+<a href="https://www.ssi.com.vn" target="_blank">
+Truy cập SSI
+</a>
+
+<hr>
+
+<h2>2. VNDirect</h2>
+
+<img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1200&q=80">
+
+<p>
+VNDirect cung cấp nền tảng đầu tư hiện đại, giao diện dễ sử dụng và nhiều công cụ phân tích cho nhà đầu tư.
+</p>
+
+<a href="https://www.vndirect.com.vn" target="_blank">
+Truy cập VNDirect
+</a>
+
+<hr>
+
+<h2>3. TCBS (Techcom Securities)</h2>
+
+<img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1200&q=80">
+
+<p>
+TCBS nổi tiếng với chính sách miễn phí giao dịch cổ phiếu và hệ sinh thái đầu tư đa dạng.
+</p>
+
+<a href="https://www.tcbs.com.vn" target="_blank">
+Truy cập TCBS
+</a>
+
+<hr>
+
+<h2>4. MBS (MB Securities)</h2>
+
+<img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80">
+
+<p>
+MBS là công ty chứng khoán thuộc Ngân hàng Quân đội (MB Bank), có hệ thống giao dịch ổn định và uy tín.
+</p>
+
+<a href="https://www.mbs.com.vn" target="_blank">
+Truy cập MBS
+</a>
+
+<hr>
+
+<h2>5. VCBS (Vietcombank Securities)</h2>
+
+<img src="https://images.unsplash.com/photo-1642543492481-44e81e3914a7?auto=format&fit=crop&w=1200&q=80">
+
+<p>
+VCBS là công ty chứng khoán trực thuộc Vietcombank, phù hợp với các nhà đầu tư ưu tiên sự an toàn và ổn định.
+</p>
+
+<a href="https://www.vcbs.com.vn" target="_blank">
+Truy cập VCBS
+</a>
+
+<hr>
+
+<h1>CÁC SỞ GIAO DỊCH CHỨNG KHOÁN VIỆT NAM</h1>
+
+<h2>HOSE</h2>
+
+<img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1200&q=80">
+
+<p>
+HOSE là Sở Giao dịch Chứng khoán Thành phố Hồ Chí Minh.
+Đây là nơi niêm yết của nhiều doanh nghiệp lớn như FPT, VCB, HPG, MWG...
+</p>
+
+<a href="https://www.hsx.vn" target="_blank">
+Truy cập HOSE
+</a>
+
+<hr>
+
+<h2>HNX</h2>
+
+<img src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=1200&q=80">
+
+<p>
+HNX là Sở Giao dịch Chứng khoán Hà Nội.
+Nơi giao dịch cổ phiếu, trái phiếu và chứng khoán phái sinh.
+</p>
+
+<a href="https://www.hnx.vn" target="_blank">
+Truy cập HNX
+</a>
+
+<hr>
+
+<h2>VNX</h2>
+
+<img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80">
+
+<p>
+VNX là Sở Giao dịch Chứng khoán Việt Nam, đơn vị quản lý HOSE và HNX.
+</p>
+
+<a href="https://www.vnx.vn" target="_blank">
+Truy cập VNX
+</a>
+
+<hr>
+
+<h2>Kết luận</h2>
+
+<p>
+Đối với người mới bắt đầu, SSI, VNDirect và TCBS là những nền tảng được sử dụng phổ biến nhất.
+Nhà đầu tư nên lựa chọn công ty chứng khoán phù hợp với nhu cầu giao dịch, chi phí và các công cụ hỗ trợ đầu tư.
+</p>
+
+</div>
+</div>
+</div>
+
+</body>
+</html>
